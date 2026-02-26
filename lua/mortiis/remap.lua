@@ -70,7 +70,7 @@ vim.keymap.set('n', '<M-3>', '<cmd>silent !tmux neww tmux-sessionizer -s 2<CR>')
 vim.keymap.set('n', '<M-4>', '<cmd>silent !tmux neww tmux-sessionizer -s 4<CR>')
 
 vim.keymap.set('n', '<leader>wr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
+vim.keymap.set('n', '<leader>x', '<cmd>!chmod u+x %<CR>', { silent = true })
 
 -- golang error shortcuts
 vim.keymap.set('n', '<leader>ee', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')
