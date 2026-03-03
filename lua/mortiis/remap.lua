@@ -72,6 +72,9 @@ vim.keymap.set('n', '<M-4>', '<cmd>silent !tmux neww tmux-sessionizer -s 4<CR>')
 vim.keymap.set('n', '<leader>wr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod u+x %<CR>', { silent = true })
 
+-- JS shortcuts
+vim.keymap.set('n', '<leader>jcl', 'oconsole.log();<Esc>hi', { desc = 'JS: console.log' })
+
 -- golang error shortcuts
 vim.keymap.set('n', '<leader>ee', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')
 vim.keymap.set('n', '<leader>ea', 'oassert.NoError(err, "")<Esc>F";a')
