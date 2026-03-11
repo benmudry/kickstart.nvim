@@ -73,10 +73,10 @@ vim.keymap.set('n', '<leader>wr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod u+x %<CR>', { silent = true })
 
 -- JS shortcuts
-vim.keymap.set('n', '<leader>jcl', 'oconsole.log();<Esc>hi', { desc = 'JS: console.log' })
+vim.keymap.set('n', '<leader>jl', 'oconsole.log();<Esc>hi', { desc = 'JS: console.log' })
 
 -- golang error shortcuts
-vim.keymap.set('n', '<leader>ee', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')
-vim.keymap.set('n', '<leader>ea', 'oassert.NoError(err, "")<Esc>F";a')
-vim.keymap.set('n', '<leader>ef', 'oif err != nil {<CR>}<Esc>Olog.Fatalf("error: %s\\n", err.Error())<Esc>jj')
-vim.keymap.set('n', '<leader>el', 'oif err != nil {<CR>}<Esc>O.logger.Error("error", "error", err)<Esc>F.;i')
+vim.keymap.set('n', '<leader>oe', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')
+vim.keymap.set('n', '<leader>oa', 'oassert.NoError(err, "")<Esc>F";a')
+vim.keymap.set('n', '<leader>of', 'oif err != nil {<CR>}<Esc>Olog.Fatalf("error: %s\\n", err.Error())<Esc>jj')
+vim.keymap.set('n', '<leader>ol', 'oif err != nil {<CR>}<Esc>O.logger.Error("error", "error", err)<Esc>F.;i')
